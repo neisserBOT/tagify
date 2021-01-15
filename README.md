@@ -1,2 +1,2 @@
-# tagify
-tagify web
+# tagify-api
+tagify API

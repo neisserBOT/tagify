@@ -1,0 +1,355 @@
+<head>
+    <title>Tagify API</title>
+
+
+</head>
+
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tagify </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <style>
+        /* FOR COLUMNS */
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .column img:hover {
+            opacity: 1;
+        }
+
+        .column {
+            padding: 1%;
+        }
+
+        /* FOR TABS */
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: coral;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        /* FOR JSON */
+        pre {
+            outline: 1px solid #ccc;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .string {
+            color: green;
+        }
+
+        .number {
+            color: darkorange;
+        }
+
+        .boolean {
+            color: blue;
+        }
+
+        .null {
+            color: magenta;
+        }
+
+        .key {
+            color: red;
+        }
+
+        /* FOR IMAGES */
+    </style>
+
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <!-- Services Area Start -->
+        <section class="service-area sky-blue section-padding2" style="padding: 3%;">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-tittle text-center">
+                            <h2 style="margin-bottom: 5%;">Tagify</h2>
+                            <h5>Choose one image to analize:</h5>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'gallery')" id="defaultOpen">From Gallery</button>
+                    <button class="tablinks" onclick="openCity(event, 'file')">From File</button>
+                    <button class="tablinks" onclick="openCity(event, 'url')">From URL</button>
+                </div>
+
+                <div id="gallery" class="tabcontent">
+                    <div class="row justify-content-center">
+                        <div class="column">
+                            <img width="150" height="100" src="assets/img/features.jpg" id="features" alt=""
+                                onclick="myFunction(this);">
+                            <img width="150" height="100" src="assets/img/room_type.jpg" id="room" alt=""
+                                onclick="myFunction(this);">
+                            <img width="150" height="100" src="assets/img/home_style.jpg" id="home" alt=""
+                                onclick="myFunction(this);">
+                            <img width="150" height="100" src="assets/img/text.jpg" id="text" alt=""
+                                onclick="myFunction(this);">
+                            <img width="150" height="100" src="assets/img/nudity.jpg" id="nudity" alt=""
+                                onclick="myFunction(this);">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="file" class="tabcontent">
+                    <h3>Upload your picture</h3>
+                    <p>Upload a file</p>
+                </div>
+
+                <div id="url" class="tabcontent">
+                    <h3>Paste URL</h3>
+                    <p>Paste iamge URL here ...</p>
+                </div>
+
+                <br> -->
+
+                <div class="row justify-content-center">
+                    <div class="column">
+                        <img width="150" height="100" src="assets/img/features_3.jpg" id="features_1" alt=""
+                            onclick="myFunction(this);">
+                        <img width="150" height="100" src="assets/img/features_2.jpg" id="room_1" alt=""
+                            onclick="myFunction(this);">
+                        <img width="150" height="100" src="assets/img/home_style_4.jpg" id="home_1" alt=""
+                            onclick="myFunction(this);">
+                        <img width="150" height="100" src="assets/img/text_1.jpg" id="text_1" alt=""
+                            onclick="myFunction(this);">
+                        <img width="150" height="100" src="assets/img/text_3.jpg" id="text_2" alt=""
+                            onclick="myFunction(this);">
+                        <img width="150" height="100" src="assets/img/nudity_1.jpg" id="nudity_1" alt=""
+                        onclick="myFunction(this);">
+                        <img width="150" height="100" src="assets/img/nudity_4.jpg" id="nudity_2" alt=""
+                        onclick="myFunction(this);"> 
+                    </div>
+                </div>
+
+                <!-- The four columns -->
+                <div class="row">
+                    <!-- <div class="column" style="text-align: center;">
+                        <img height="500" width="600" id="expandedImg">
+                        <div id="imgtext"></div>
+                    </div> -->
+
+                    <div class="column">
+                        <canvas id="canvasImage" width="600" height="500"></canvas>
+                    </div>
+
+                    <br>
+                    <div class="column">
+                        <!-- <input id="clickMe" type="button" value="Tagify" onclick="uploadImage();" /> -->
+                        <div style="width: 500; height: 490; overflow-y: auto;">
+                            <pre id="json"></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    // FUNCTIONS FOR LOAD IMAGES
+                    // Get the element with id="defaultOpen" and click on it
+                    //document.getElementById("defaultOpen").click();
+                    myFunction(document.getElementById("features_1"));
+
+                    function myFunction(imgs) {
+                        document.getElementById("features_1").style.border = "none";
+                        document.getElementById("room_1").style.border = "none";
+                        document.getElementById("home_1").style.border = "none";
+                        document.getElementById("text_1").style.border = "none";
+                        document.getElementById("text_2").style.border = "none";
+                        document.getElementById("nudity_1").style.border = "none";
+                        document.getElementById("nudity_2").style.border = "none";
+
+                        imgs.style.border = "8px solid coral";
+
+                        // var expandImg = document.getElementById("expandedImg");
+                        // expandImg.src = imgs.src;
+                        // //imgText.innerHTML = imgs.alt;
+                        // //expandImg.parentElement.style.display = "block";
+
+                        var c = document.getElementById("canvasImage");
+                        var ctx = c.getContext("2d");                       
+                        ctx.drawImage(imgs, 0, 0, 600, 500);
+
+                        // if (document.getElementById("expandedImg").complete == true) {
+                        //      uploadImage(expandImg);
+                        // }
+                                                    
+                        uploadImage() 
+                            
+                    }
+
+                    // FUNCTIONS FOR API
+                    function uploadImage() {
+
+                        var canvas = document.getElementById("canvasImage")
+                        var data = { "image": encodeURI(canvas.toDataURL()) }
+
+                        fetch(`http://ec2-18-222-94-38.us-east-2.compute.amazonaws.com:5000/tagify-api`, {
+                            method: "POST",
+                            body: JSON.stringify(data),
+                            headers: new Headers({
+                                "content-type": "application/json"
+                            })
+                        }).then(function (response) {
+                            if (response.status !== 200) {
+                                console.log(`There is a problem: ${response.status}`);
+                                return;
+                            }
+                            response.json().then(function (data) {
+                                //document.getElementById("results").innerHTML = data["response"]
+                                document.getElementById("json").innerHTML = syntaxHighlight(JSON.stringify(data, undefined, 8));
+                                //console.log(data["response"])
+                            });
+                        }).catch(function (error) {
+                            console.log(error);
+                        });
+                    }
+
+                    // FUNCTIONS FOR TAB
+                    function openCity(evt, cityName) {
+                        var i, tabcontent, tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+                        document.getElementById(cityName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+
+                    // FUNCTION FOR COLORFUL JSON
+                    function syntaxHighlight(json) {
+                        json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                        return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+                            var cls = 'number';
+                            if (/^"/.test(match)) {
+                                if (/:$/.test(match)) {
+                                    cls = 'key';
+                                } else {
+                                    cls = 'string';
+                                }
+                            } else if (/true|false/.test(match)) {
+                                cls = 'boolean';
+                            } else if (/null/.test(match)) {
+                                cls = 'null';
+                            }
+                            return '<span class="' + cls + '">' + match + '</span>';
+                        });
+                    }
+                </script>
+
+            </div>
+        </section>
+        <!-- Services Area End -->
+    </main>
+
+
+    <!-- JS here -->
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
